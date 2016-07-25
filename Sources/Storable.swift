@@ -110,7 +110,7 @@ extension Float: StorableDefaultType { }
 *  Enums without a raw value e.g. with associated types are not supported.
 */
 public protocol StorableRawEnum: Storable {
-    typealias StorableRawType: StorableDefaultType
+    associatedtype StorableRawType: StorableDefaultType
 
     /// Provided automatically for enum's that have a raw value
     var rawValue: StorableRawType { get }
@@ -119,7 +119,7 @@ public protocol StorableRawEnum: Storable {
 
 public extension StorableRawEnum {
     init?(warehouse: Warehouseable) {
-        if let value: StorableRawType = warehouse.get("rawValue") {
+        if let value: StorableRawType = warehouse.get(valueKey: "rawValue") {
             self.init(rawValue: value)
             return
         }

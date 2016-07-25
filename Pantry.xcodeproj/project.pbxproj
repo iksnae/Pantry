@@ -1,596 +1,209 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 47;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		3297DBA51C1CB68C004EE72E /* PantryClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3297DBA31C1CB68C004EE72E /* PantryClassTests.swift */; };
-		3297DBA61C1CB68C004EE72E /* TestClassTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3297DBA41C1CB68C004EE72E /* TestClassTypes.swift */; };
-		541AD6D91C549DCB00E7107B /* JSONWarehouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541AD6D01C549DCB00E7107B /* JSONWarehouse.swift */; };
-		541AD6DA1C549DCB00E7107B /* MemoryWarehouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541AD6D11C549DCB00E7107B /* MemoryWarehouse.swift */; };
-		541AD6DB1C549DCB00E7107B /* Mirror+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541AD6D21C549DCB00E7107B /* Mirror+Serialization.swift */; };
-		541AD6DC1C549DCB00E7107B /* Pantry.h in Headers */ = {isa = PBXBuildFile; fileRef = 541AD6D31C549DCB00E7107B /* Pantry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		541AD6DD1C549DCB00E7107B /* Pantry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541AD6D41C549DCB00E7107B /* Pantry.swift */; };
-		541AD6DE1C549DCB00E7107B /* Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541AD6D51C549DCB00E7107B /* Storable.swift */; };
-		541AD6DF1C549DCB00E7107B /* Warehousable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541AD6D61C549DCB00E7107B /* Warehousable.swift */; };
-		541AD6E01C549DCB00E7107B /* WarehouseCacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541AD6D71C549DCB00E7107B /* WarehouseCacheable.swift */; };
-		658AA8F31C0C6D8A00DD4834 /* PantryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658AA8F21C0C6D8A00DD4834 /* PantryTests.swift */; };
-		658AA8FD1C0C6DF900DD4834 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658AA8FB1C0C6DF900DD4834 /* AppDelegate.swift */; };
-		658AA8FE1C0C6DF900DD4834 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658AA8FC1C0C6DF900DD4834 /* ViewController.swift */; };
-		658AA9001C0C6E0C00DD4834 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 658AA8FF1C0C6E0C00DD4834 /* Assets.xcassets */; };
-		658AA9051C0C6E1100DD4834 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 658AA9011C0C6E1100DD4834 /* LaunchScreen.storyboard */; };
-		658AA9061C0C6E1100DD4834 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 658AA9031C0C6E1100DD4834 /* Main.storyboard */; };
-		AF3C06E51C3CAC9800234504 /* EnumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3C06E31C3CAC1400234504 /* EnumTests.swift */; };
-		AF5486601C16360C00E00CD0 /* MemoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF54865F1C16360C00E00CD0 /* MemoryTests.swift */; };
-		AF5486621C16385500E00CD0 /* TestTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5486611C16385500E00CD0 /* TestTypes.swift */; };
-		AFDF24B11C165E340064C578 /* Pantry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C0A3BD1BE2B80300FB703A /* Pantry.framework */; };
-		D0C0A3C81BE2B80300FB703A /* Pantry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C0A3BD1BE2B80300FB703A /* Pantry.framework */; };
-		ECF52F611C53F3D000FBC6BA /* TestEnumTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF52F601C53F3D000FBC6BA /* TestEnumTypes.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AFDF24B21C165E390064C578 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0C0A3B41BE2B80300FB703A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D0C0A3BC1BE2B80300FB703A;
-			remoteInfo = Pantry;
-		};
-		D0C0A3C91BE2B80300FB703A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0C0A3B41BE2B80300FB703A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D0C0A3BC1BE2B80300FB703A;
-			remoteInfo = Storage;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		3297DBA31C1CB68C004EE72E /* PantryClassTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PantryClassTests.swift; path = PantryTests/PantryClassTests.swift; sourceTree = SOURCE_ROOT; };
-		3297DBA41C1CB68C004EE72E /* TestClassTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestClassTypes.swift; path = PantryTests/TestClassTypes.swift; sourceTree = SOURCE_ROOT; };
-		541AD6CF1C549DCB00E7107B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		541AD6D01C549DCB00E7107B /* JSONWarehouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONWarehouse.swift; sourceTree = "<group>"; };
-		541AD6D11C549DCB00E7107B /* MemoryWarehouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryWarehouse.swift; sourceTree = "<group>"; };
-		541AD6D21C549DCB00E7107B /* Mirror+Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mirror+Serialization.swift"; sourceTree = "<group>"; };
-		541AD6D31C549DCB00E7107B /* Pantry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pantry.h; sourceTree = "<group>"; };
-		541AD6D41C549DCB00E7107B /* Pantry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pantry.swift; sourceTree = "<group>"; };
-		541AD6D51C549DCB00E7107B /* Storable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storable.swift; sourceTree = "<group>"; };
-		541AD6D61C549DCB00E7107B /* Warehousable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Warehousable.swift; sourceTree = "<group>"; };
-		541AD6D71C549DCB00E7107B /* WarehouseCacheable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarehouseCacheable.swift; sourceTree = "<group>"; };
-		658AA8F11C0C6D7E00DD4834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = PantryTests/Info.plist; sourceTree = SOURCE_ROOT; };
-		658AA8F21C0C6D8A00DD4834 /* PantryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PantryTests.swift; path = PantryTests/PantryTests.swift; sourceTree = SOURCE_ROOT; };
-		658AA8FB1C0C6DF900DD4834 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PantryExample/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
-		658AA8FC1C0C6DF900DD4834 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = PantryExample/ViewController.swift; sourceTree = SOURCE_ROOT; };
-		658AA8FF1C0C6E0C00DD4834 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PantryExample/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		658AA9021C0C6E1100DD4834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = PantryExample/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		658AA9041C0C6E1100DD4834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = PantryExample/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
-		658AA9071C0C6E1800DD4834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = PantryExample/Info.plist; sourceTree = SOURCE_ROOT; };
-		AF3C06E31C3CAC1400234504 /* EnumTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnumTests.swift; path = PantryTests/EnumTests.swift; sourceTree = SOURCE_ROOT; };
-		AF54865F1C16360C00E00CD0 /* MemoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MemoryTests.swift; path = PantryTests/MemoryTests.swift; sourceTree = SOURCE_ROOT; };
-		AF5486611C16385500E00CD0 /* TestTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestTypes.swift; path = PantryTests/TestTypes.swift; sourceTree = SOURCE_ROOT; };
-		D0577A521BEACF4A00A8B8FF /* PantryExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PantryExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0C0A3BD1BE2B80300FB703A /* Pantry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pantry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0C0A3C71BE2B80300FB703A /* PantryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PantryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECF52F601C53F3D000FBC6BA /* TestEnumTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestEnumTypes.swift; path = PantryTests/TestEnumTypes.swift; sourceTree = SOURCE_ROOT; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		D0577A4F1BEACF4A00A8B8FF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AFDF24B11C165E340064C578 /* Pantry.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0C0A3B91BE2B80300FB703A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0C0A3C41BE2B80300FB703A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D0C0A3C81BE2B80300FB703A /* Pantry.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		541AD6CE1C549DCB00E7107B /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				541AD6CF1C549DCB00E7107B /* Info.plist */,
-				541AD6D01C549DCB00E7107B /* JSONWarehouse.swift */,
-				541AD6D11C549DCB00E7107B /* MemoryWarehouse.swift */,
-				541AD6D21C549DCB00E7107B /* Mirror+Serialization.swift */,
-				541AD6D31C549DCB00E7107B /* Pantry.h */,
-				541AD6D41C549DCB00E7107B /* Pantry.swift */,
-				541AD6D51C549DCB00E7107B /* Storable.swift */,
-				541AD6D61C549DCB00E7107B /* Warehousable.swift */,
-				541AD6D71C549DCB00E7107B /* WarehouseCacheable.swift */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		D0577A531BEACF4A00A8B8FF /* PantryExample */ = {
-			isa = PBXGroup;
-			children = (
-				658AA8FB1C0C6DF900DD4834 /* AppDelegate.swift */,
-				658AA8FC1C0C6DF900DD4834 /* ViewController.swift */,
-				658AA9011C0C6E1100DD4834 /* LaunchScreen.storyboard */,
-				658AA9031C0C6E1100DD4834 /* Main.storyboard */,
-				658AA8FF1C0C6E0C00DD4834 /* Assets.xcassets */,
-				658AA9071C0C6E1800DD4834 /* Info.plist */,
-			);
-			name = PantryExample;
-			path = StorageExample;
-			sourceTree = "<group>";
-		};
-		D0C0A3B31BE2B80300FB703A = {
-			isa = PBXGroup;
-			children = (
-				541AD6CE1C549DCB00E7107B /* Sources */,
-				D0C0A3CB1BE2B80300FB703A /* PantryTests */,
-				D0577A531BEACF4A00A8B8FF /* PantryExample */,
-				D0C0A3BE1BE2B80300FB703A /* Products */,
-			);
-			indentWidth = 4;
-			sourceTree = "<group>";
-			tabWidth = 4;
-		};
-		D0C0A3BE1BE2B80300FB703A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D0C0A3BD1BE2B80300FB703A /* Pantry.framework */,
-				D0C0A3C71BE2B80300FB703A /* PantryTests.xctest */,
-				D0577A521BEACF4A00A8B8FF /* PantryExample.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D0C0A3CB1BE2B80300FB703A /* PantryTests */ = {
-			isa = PBXGroup;
-			children = (
-				658AA8F11C0C6D7E00DD4834 /* Info.plist */,
-				AF54865F1C16360C00E00CD0 /* MemoryTests.swift */,
-				3297DBA31C1CB68C004EE72E /* PantryClassTests.swift */,
-				658AA8F21C0C6D8A00DD4834 /* PantryTests.swift */,
-				AF3C06E31C3CAC1400234504 /* EnumTests.swift */,
-				3297DBA41C1CB68C004EE72E /* TestClassTypes.swift */,
-				AF5486611C16385500E00CD0 /* TestTypes.swift */,
-				ECF52F601C53F3D000FBC6BA /* TestEnumTypes.swift */,
-			);
-			name = PantryTests;
-			path = StorageTests;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		D0C0A3BA1BE2B80300FB703A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				541AD6DC1C549DCB00E7107B /* Pantry.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		D0577A511BEACF4A00A8B8FF /* PantryExample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D0577A631BEACF4A00A8B8FF /* Build configuration list for PBXNativeTarget "PantryExample" */;
-			buildPhases = (
-				D0577A4E1BEACF4A00A8B8FF /* Sources */,
-				D0577A4F1BEACF4A00A8B8FF /* Frameworks */,
-				D0577A501BEACF4A00A8B8FF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AFDF24B31C165E390064C578 /* PBXTargetDependency */,
-			);
-			name = PantryExample;
-			productName = StorageExample;
-			productReference = D0577A521BEACF4A00A8B8FF /* PantryExample.app */;
-			productType = "com.apple.product-type.application";
-		};
-		D0C0A3BC1BE2B80300FB703A /* Pantry */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D0C0A3D11BE2B80300FB703A /* Build configuration list for PBXNativeTarget "Pantry" */;
-			buildPhases = (
-				D0C0A3B81BE2B80300FB703A /* Sources */,
-				D0C0A3B91BE2B80300FB703A /* Frameworks */,
-				D0C0A3BA1BE2B80300FB703A /* Headers */,
-				D0C0A3BB1BE2B80300FB703A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Pantry;
-			productName = Storage;
-			productReference = D0C0A3BD1BE2B80300FB703A /* Pantry.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D0C0A3C61BE2B80300FB703A /* PantryTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D0C0A3D41BE2B80300FB703A /* Build configuration list for PBXNativeTarget "PantryTests" */;
-			buildPhases = (
-				D0C0A3C31BE2B80300FB703A /* Sources */,
-				D0C0A3C41BE2B80300FB703A /* Frameworks */,
-				D0C0A3C51BE2B80300FB703A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D0C0A3CA1BE2B80300FB703A /* PBXTargetDependency */,
-			);
-			name = PantryTests;
-			productName = StorageTests;
-			productReference = D0C0A3C71BE2B80300FB703A /* PantryTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D0C0A3B41BE2B80300FB703A /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = "That Thing in Swift";
-				TargetAttributes = {
-					D0577A511BEACF4A00A8B8FF = {
-						CreatedOnToolsVersion = 7.1;
-					};
-					D0C0A3BC1BE2B80300FB703A = {
-						CreatedOnToolsVersion = 7.1;
-					};
-					D0C0A3C61BE2B80300FB703A = {
-						CreatedOnToolsVersion = 7.1;
-					};
-				};
-			};
-			buildConfigurationList = D0C0A3B71BE2B80300FB703A /* Build configuration list for PBXProject "Pantry" */;
-			compatibilityVersion = "Xcode 6.3";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = D0C0A3B31BE2B80300FB703A;
-			productRefGroup = D0C0A3BE1BE2B80300FB703A /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				D0C0A3BC1BE2B80300FB703A /* Pantry */,
-				D0C0A3C61BE2B80300FB703A /* PantryTests */,
-				D0577A511BEACF4A00A8B8FF /* PantryExample */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		D0577A501BEACF4A00A8B8FF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				658AA9061C0C6E1100DD4834 /* Main.storyboard in Resources */,
-				658AA9001C0C6E0C00DD4834 /* Assets.xcassets in Resources */,
-				658AA9051C0C6E1100DD4834 /* LaunchScreen.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0C0A3BB1BE2B80300FB703A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0C0A3C51BE2B80300FB703A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		D0577A4E1BEACF4A00A8B8FF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				658AA8FE1C0C6DF900DD4834 /* ViewController.swift in Sources */,
-				658AA8FD1C0C6DF900DD4834 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0C0A3B81BE2B80300FB703A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ECF52F611C53F3D000FBC6BA /* TestEnumTypes.swift in Sources */,
-				541AD6DA1C549DCB00E7107B /* MemoryWarehouse.swift in Sources */,
-				541AD6D91C549DCB00E7107B /* JSONWarehouse.swift in Sources */,
-				541AD6DB1C549DCB00E7107B /* Mirror+Serialization.swift in Sources */,
-				541AD6DD1C549DCB00E7107B /* Pantry.swift in Sources */,
-				541AD6E01C549DCB00E7107B /* WarehouseCacheable.swift in Sources */,
-				541AD6DE1C549DCB00E7107B /* Storable.swift in Sources */,
-				541AD6DF1C549DCB00E7107B /* Warehousable.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0C0A3C31BE2B80300FB703A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3297DBA51C1CB68C004EE72E /* PantryClassTests.swift in Sources */,
-				AF5486601C16360C00E00CD0 /* MemoryTests.swift in Sources */,
-				658AA8F31C0C6D8A00DD4834 /* PantryTests.swift in Sources */,
-				AF5486621C16385500E00CD0 /* TestTypes.swift in Sources */,
-				AF3C06E51C3CAC9800234504 /* EnumTests.swift in Sources */,
-				3297DBA61C1CB68C004EE72E /* TestClassTypes.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AFDF24B31C165E390064C578 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D0C0A3BC1BE2B80300FB703A /* Pantry */;
-			targetProxy = AFDF24B21C165E390064C578 /* PBXContainerItemProxy */;
-		};
-		D0C0A3CA1BE2B80300FB703A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D0C0A3BC1BE2B80300FB703A /* Pantry */;
-			targetProxy = D0C0A3C91BE2B80300FB703A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		658AA9011C0C6E1100DD4834 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				658AA9021C0C6E1100DD4834 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		658AA9031C0C6E1100DD4834 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				658AA9041C0C6E1100DD4834 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		D0577A611BEACF4A00A8B8FF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PantryExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.thatthinginswift.PantryExample;
-				PRODUCT_NAME = PantryExample;
-			};
-			name = Debug;
-		};
-		D0577A621BEACF4A00A8B8FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PantryExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.thatthinginswift.PantryExample;
-				PRODUCT_NAME = PantryExample;
-			};
-			name = Release;
-		};
-		D0C0A3CF1BE2B80300FB703A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D0C0A3D01BE2B80300FB703A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D0C0A3D21BE2B80300FB703A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.thatthinginswift.Pantrry;
-				PRODUCT_NAME = Pantry;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		D0C0A3D31BE2B80300FB703A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.thatthinginswift.Pantrry;
-				PRODUCT_NAME = Pantry;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D0C0A3D51BE2B80300FB703A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = PantryTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.thatthinginswift.PantryTests;
-				PRODUCT_NAME = PantryTests;
-			};
-			name = Debug;
-		};
-		D0C0A3D61BE2B80300FB703A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = PantryTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.thatthinginswift.PantryTests;
-				PRODUCT_NAME = PantryTests;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		D0577A631BEACF4A00A8B8FF /* Build configuration list for PBXNativeTarget "PantryExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0577A611BEACF4A00A8B8FF /* Debug */,
-				D0577A621BEACF4A00A8B8FF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0C0A3B71BE2B80300FB703A /* Build configuration list for PBXProject "Pantry" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0C0A3CF1BE2B80300FB703A /* Debug */,
-				D0C0A3D01BE2B80300FB703A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0C0A3D11BE2B80300FB703A /* Build configuration list for PBXNativeTarget "Pantry" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0C0A3D21BE2B80300FB703A /* Debug */,
-				D0C0A3D31BE2B80300FB703A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0C0A3D41BE2B80300FB703A /* Build configuration list for PBXNativeTarget "PantryTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0C0A3D51BE2B80300FB703A /* Debug */,
-				D0C0A3D61BE2B80300FB703A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D0C0A3B41BE2B80300FB703A /* Project object */;
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 46;
+    rootObject = __RootObject_;
+    objects = {
+        __RootObject_ = {
+            isa = PBXProject;
+            attributes = {LastUpgradeCheck = 9999;};
+            buildConfigurationList = ___RootConfs_;
+            compatibilityVersion = 'Xcode 3.2';
+            developmentRegion = English;
+            hasScannedForEncodings = 0;
+            knownRegions = (en);
+            mainGroup = ___RootGroup_;
+            productRefGroup = ____Products_;
+            projectDirPath = '';
+            projectRoot = '';
+            targets = (______Target_Pantry);
+        };
+        '__PBXFileRef_Package.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Package.swift';
+            path = 'Package.swift';
+            sourceTree = '<group>';
+        };
+        ___RootGroup_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Package.swift', _____Configs_, _____Sources_, Dependencies_, _______Tests_, ____Products_);
+            sourceTree = '<group>';
+        };
+        __PBXFileRef_Pantry_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            name = 'Pantry_Info.plist';
+            path = 'Pantry.xcodeproj/Pantry_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_Pantry = {
+            isa = PBXGroup;
+            name = Pantry;
+            path = 'Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/JSONWarehouse.swift', '__PBXFileRef_Sources/MemoryWarehouse.swift', '__PBXFileRef_Sources/Mirror+Serialization.swift', '__PBXFileRef_Sources/Pantry.swift', '__PBXFileRef_Sources/Storable.swift', '__PBXFileRef_Sources/Warehousable.swift', '__PBXFileRef_Sources/WarehouseCacheable.swift', __PBXFileRef_Pantry_Info.plist);
+        };
+        '__PBXFileRef_Sources/JSONWarehouse.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'JSONWarehouse.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/MemoryWarehouse.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'MemoryWarehouse.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/Mirror+Serialization.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Mirror+Serialization.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/Pantry.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Pantry.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/Storable.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Storable.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/Warehousable.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Warehousable.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/WarehouseCacheable.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'WarehouseCacheable.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_Pantry = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_Pantry;
+            buildPhases = (CompilePhase_Pantry, ___LinkPhase_Pantry);
+            buildRules = ();
+            dependencies = ();
+            name = Pantry;
+            productName = Pantry;
+            productReference = _____Product_Pantry;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_Pantry = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'Pantry.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_Pantry = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/JSONWarehouse.swift', '__src_cc_ref_Sources/MemoryWarehouse.swift', '__src_cc_ref_Sources/Mirror+Serialization.swift', '__src_cc_ref_Sources/Pantry.swift', '__src_cc_ref_Sources/Storable.swift', '__src_cc_ref_Sources/Warehousable.swift', '__src_cc_ref_Sources/WarehouseCacheable.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/JSONWarehouse.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/JSONWarehouse.swift';
+        };
+        '__src_cc_ref_Sources/MemoryWarehouse.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/MemoryWarehouse.swift';
+        };
+        '__src_cc_ref_Sources/Mirror+Serialization.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Mirror+Serialization.swift';
+        };
+        '__src_cc_ref_Sources/Pantry.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Pantry.swift';
+        };
+        '__src_cc_ref_Sources/Storable.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Storable.swift';
+        };
+        '__src_cc_ref_Sources/Warehousable.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Warehousable.swift';
+        };
+        '__src_cc_ref_Sources/WarehouseCacheable.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/WarehouseCacheable.swift';
+        };
+        ___LinkPhase_Pantry = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_Pantry = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_Pantry, _ReleaseConf_Pantry);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_Pantry = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'Pantry.xcodeproj/Pantry_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_LDFLAGS = '$(inherited)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            name = Debug;
+        };
+        _ReleaseConf_Pantry = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'Pantry.xcodeproj/Pantry_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_LDFLAGS = '$(inherited)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            name = Release;
+        };
+        __Dependency_Pantry = {
+            isa = PBXTargetDependency;
+            target = ______Target_Pantry;
+        };
+        '__PBXFileRef_Pantry.xcodeproj/Configs/Project.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            name = 'Project.xcconfig';
+            path = 'Pantry.xcodeproj/Configs/Project.xcconfig';
+            sourceTree = '<group>';
+        };
+        _____Configs_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Pantry.xcodeproj/Configs/Project.xcconfig');
+            name = Configs;
+            sourceTree = '<group>';
+        };
+        _____Sources_ = {
+            isa = PBXGroup;
+            children = (_______Group_Pantry);
+            name = Sources;
+            sourceTree = '<group>';
+        };
+        ____Products_ = {
+            isa = PBXGroup;
+            children = (_____Product_Pantry);
+            name = Products;
+            sourceTree = '<group>';
+        };
+        _______Debug_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_Pantry.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Debug;
+        };
+        _____Release_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_Pantry.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Release;
+        };
+        ___RootConfs_ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (_______Debug_, _____Release_);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+    };
 }

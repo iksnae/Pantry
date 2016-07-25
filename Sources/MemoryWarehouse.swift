@@ -97,7 +97,7 @@ extension MemoryWarehouse: WarehouseCacheable {
     }
 
     func removeCache() {
-        MemoryWarehouse.globalCache.removeValueForKey(key)
+        MemoryWarehouse.globalCache.removeValue(forKey: key)
     }
 
     func loadCache() -> AnyObject? {

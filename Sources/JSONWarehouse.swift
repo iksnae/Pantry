@@ -114,11 +114,11 @@ public class JSONWarehouse: Warehouseable, WarehouseCacheable {
         storableDictionary["expires"] = expires.toDate().timeIntervalSince1970
         storableDictionary["storage"] = object
         
-        let _ = (storableDictionary as NSDictionary).writeToURL(cacheLocation, atomically: true)
+        let _ = (storableDictionary as NSDictionary).write(to: cacheLocation, atomically: true)
     }
     
     func removeCache() {
-        try! NSFileManager.defaultManager().removeItemAtURL(cacheFileURL())
+        try! NSFileManager.default().removeItem(at: cacheFileURL())
     }
     
     func loadCache() -> AnyObject? {
@@ -128,8 +128,7 @@ public class JSONWarehouse: Warehouseable, WarehouseCacheable {
         }
 
         let cacheLocation = cacheFileURL()
-        
-        if let metaDictionary = NSDictionary(contentsOfURL: cacheLocation),
+        if let metaDictionary = NSDictionary(contentsOf: cacheLocation),
             let cache = metaDictionary["storage"] {
                 return cache
         }
@@ -139,8 +138,8 @@ public class JSONWarehouse: Warehouseable, WarehouseCacheable {
     
     func cacheExists() -> Bool {
 
-        guard NSFileManager.defaultManager().fileExistsAtPath(cacheFileURL().path!),
-            let metaDictionary = NSDictionary(contentsOfURL: cacheFileURL()) else {
+        guard NSFileManager.default().fileExists(atPath: cacheFileURL().path!),
+            let metaDictionary = NSDictionary(contentsOf: cacheFileURL()) else {
                 return false
         }
 
@@ -160,12 +159,13 @@ public class JSONWarehouse: Warehouseable, WarehouseCacheable {
     }
     
     func cacheFileURL() -> NSURL {
-        let url = NSFileManager.defaultManager().URLsForDirectory(.CachesDirectory, inDomains: .UserDomainMask).first!
+        let url = NSFileManager.default().urlsForDirectory(.cachesDirectory, inDomains: .userDomainMask).first!
         
-        let writeDirectory = url.URLByAppendingPathComponent("com.thatthinginswift.pantry")
-        let cacheLocation = writeDirectory.URLByAppendingPathComponent(self.key)
+        let writeDirectory = url.appendingPathComponent("com.thatthinginswift.pantry")
+        let cacheLocation = writeDirectory.appendingPathComponent(self.key)
         
-        try! NSFileManager.defaultManager().createDirectoryAtURL(writeDirectory, withIntermediateDirectories: true, attributes: nil)
+        
+        try! NSFileManager.default().createDirectory(at: writeDirectory, withIntermediateDirectories: true, attributes: nil)
         
         return cacheLocation
     }

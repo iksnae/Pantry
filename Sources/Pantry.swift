@@ -44,9 +44,9 @@ public class Pantry {
      - parameter expires: The storage expiration. Defaults to `Never`
      */
     public static func pack<T: Storable>(object: T, key: String, expires: StorageExpiry = .Never) {
-        let warehouse = getWarehouse(key)
+        let warehouse = getWarehouse(forKey:key)
         
-        warehouse.write(object.toDictionary(), expires: expires)
+        warehouse.write(object: object.toDictionary(), expires: expires)
     }
 
     /**
@@ -55,14 +55,15 @@ public class Pantry {
      - parameter key: The objects' key
      */
     public static func pack<T: Storable>(objects: [T], key: String) {
-        let warehouse = getWarehouse(key)
+        let warehouse = getWarehouse(forKey:
+            key)
         
         var result = [AnyObject]()
         for object in objects {
             result.append(object.toDictionary())
         }
 
-        warehouse.write(result, expires: .Never)
+        warehouse.write(object: result, expires: .Never)
     }
 
     /**
@@ -74,9 +75,9 @@ public class Pantry {
      - SeeAlso: `StorableDefaultType`
      */
     public static func pack<T: StorableDefaultType>(object: T, key: String, expires: StorageExpiry = .Never) {
-        let warehouse = getWarehouse(key)
+        let warehouse = getWarehouse(forKey:key)
         
-        warehouse.write(object as! AnyObject, expires: expires)
+        warehouse.write(object: object as! AnyObject, expires: expires)
     }
 
     /**
@@ -87,14 +88,14 @@ public class Pantry {
      - SeeAlso: `StorableDefaultType`
      */
     public static func pack<T: StorableDefaultType>(objects: [T], key: String) {
-        let warehouse = getWarehouse(key)
+        let warehouse = getWarehouse(forKey:key)
         
         var result = [AnyObject]()
         for object in objects {
             result.append(object as! AnyObject)
         }
         
-        warehouse.write(result, expires: .Never)
+        warehouse.write(object: result, expires: .Never)
     }
 
     /**
@@ -105,14 +106,14 @@ public class Pantry {
      - SeeAlso: `StorableDefaultType`
      */
     public static func pack<T: StorableDefaultType>(objects: [T?], key: String) {
-        let warehouse = getWarehouse(key)
+        let warehouse = getWarehouse(forKey:key)
         
         var result = [AnyObject]()
         for object in objects {
             result.append(object as! AnyObject)
         }
         
-        warehouse.write(result, expires: .Never)
+        warehouse.write(object: result, expires: .Never)
     }
 
 
@@ -124,7 +125,7 @@ public class Pantry {
     - returns: T?
     */
     public static func unpack<T: Storable>(key: String) -> T? {
-        let warehouse = getWarehouse(key)
+        let warehouse = getWarehouse(forKey:key)
         
         if warehouse.cacheExists() {
             return T(warehouse: warehouse)
@@ -139,7 +140,7 @@ public class Pantry {
      - returns: [T]?
      */
     public static func unpack<T: Storable>(key: String) -> [T]? {
-        let warehouse = getWarehouse(key)
+        let warehouse = getWarehouse(forKey:key)
 
         guard warehouse.cacheExists(),
             let cache = warehouse.loadCache() as? Array<AnyObject> else {
@@ -148,7 +149,7 @@ public class Pantry {
         
         var unpackedItems = [T]()
         for case let item as Dictionary<String, AnyObject> in cache  {
-            if let unpackedItem: T = unpack(item) {
+            if let unpackedItem: T = unpack(dictionary:item) {
                 unpackedItems.append(unpackedItem)
             }
         }
@@ -163,7 +164,7 @@ public class Pantry {
      - SeeAlso: `StorableDefaultType`
      */
     public static func unpack<T: StorableDefaultType>(key: String) -> [T]? {
-        let warehouse = getWarehouse(key)
+        let warehouse = getWarehouse(forKey:key)
         
         guard warehouse.cacheExists(),
             let cache = warehouse.loadCache() as? Array<AnyObject> else {
@@ -184,7 +185,7 @@ public class Pantry {
      - SeeAlso: `StorableDefaultType`
      */
     public static func unpack<T: StorableDefaultType>(key: String) -> T? {
-        let warehouse = getWarehouse(key)
+        let warehouse = getWarehouse(forKey:key)
 
         guard warehouse.cacheExists(),
             let cache = warehouse.loadCache() as? T else {
@@ -199,18 +200,18 @@ public class Pantry {
      - parameter key: The object's key
      */
     public static func expire(key: String) {
-        let warehouse = getWarehouse(key)
+        let warehouse = getWarehouse(forKey:key)
 
         warehouse.removeCache()
     }
 
     public static func itemExistsForKey(key: String) -> Bool {
-        let warehouse = getWarehouse(key)
+        let warehouse = getWarehouse(forKey:key)
         return warehouse.cacheExists()
     }
 
     static func unpack<T: Storable>(dictionary: Dictionary<String, AnyObject>) -> T? {
-        let warehouse = getWarehouse(dictionary)
+        let warehouse = getWarehouse(forContext:dictionary)
         
         return T(warehouse: warehouse)
     }
